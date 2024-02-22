@@ -1,0 +1,120 @@
+.series-products {
+    margin-top: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-top: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-top: 40px;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: 1396px) {
+            font-size: 40px;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 10px;
+        }
+    }
+    .custom-color {
+        margin-bottom: 36px;
+    }   
+}
+.series-product-scrollbar {
+    margin-top: 40px;
+}
+.series-products__slider {
+    @media (max-width: 1396px) {
+        display: none;
+    }
+}
+
+.series-product-slider-tablet {
+    display: none;
+    @media (max-width: 1396px) {
+        display: block;
+    }
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+    .swiper-slide {
+        max-width: 450px;
+    }
+}
+.custom-color {
+    margin-bottom: 41px;
+}
+
+.designer-recomend-slider-tablet {
+    display: none;
+    @media (max-width: 1396px) {
+        display: block;
+    }
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+    .swiper-slide {
+        max-width: 450px;
+    }
+}
+
+.popular-slider-tablet {
+    display: none;
+    .swiper-slide {
+        max-width: 450px;
+    }
+    @media (max-width: 1396px) {
+        display: block;
+    }
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+}
+
+.series-product-tablet-prev,
+.designer-recomend-tablet-prev,
+.popular-slider-tablet-prev  {
+    font-size: 0;
+    position: absolute;
+    left: 243px;
+    top: 40%;
+    z-index: 2;
+}
+.series-product-tablet-next,
+.designer-recomend-tablet-next,
+.popular-slider-tablet-next {
+    font-size: 0;
+    position: absolute;
+    right: 243px;
+    top: 40%;
+    z-index: 2;
+}
+.series-product-mobile-wrapper {
+    display: none;
+    column-gap: 32px;
+    align-items: center;
+    @media (max-width: $breakpoint926) {
+        display: flex;
+    }
+    .product-card {
+        padding: 5px 5px 3px 5px;
+    }
+    button {
+        flex-shrink: 0;
+    }
+}
+
+.services {
+    margin-top: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-top: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-top: 40px;
+    }
+}

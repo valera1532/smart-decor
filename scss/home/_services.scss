@@ -1,0 +1,229 @@
+.services {
+    padding: 50px 0;
+    background-color: $accent-color2;
+    margin-bottom: 120px;
+    @media (max-width: 1300px) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        padding: 9px 0;
+        margin-bottom: 40px;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            margin-bottom: 10px;
+            letter-spacing: 3.2px;
+        }
+    }
+}
+.services-slider {
+    overflow-y: visible;
+    @media (max-width: $breakpoint1400) {
+        height: 400px;
+    }
+    @media (max-width: $breakpoint926) {
+        height: 378px;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .services-slider-mobile-prev {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 29%;
+        transform: translateY(-50%) rotate(-180deg);
+        @media (max-width: $breakpoint926) {
+            display: unset;
+        }
+    }
+    .services-slider-mobile-next {
+        display: none; 
+        position: absolute;
+        z-index: 2;
+        top: 29%;
+        transform: translateY(-50%);
+        right: 0;
+        @media (max-width: $breakpoint926) {
+            display: unset;
+        }
+    }
+    &__slide {
+        display: flex;
+        column-gap: 70px;
+        @media (max-width: $breakpoint1400) {
+            column-gap: 42px;
+        }
+        @media (max-width: $breakpoint926) {
+            display: block;
+        }
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+    &__content {
+        max-width: 870px;
+        margin-top: 121px;
+        @media (max-width: 1440px) {
+            margin-top: 30px;
+        }
+        @media (max-width: $breakpoint1400) {
+            margin-top: 10px;
+        }
+        h4 {
+            color: #31302E;
+            font-family: Rubik;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            @media (max-width: $breakpoint926) {
+                font-size: 11.5px;
+                letter-spacing: 0.475px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        p {
+            color: #31302E;
+            font-size: 18.5px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 126.4%;
+            letter-spacing: 3.608px;
+            margin-bottom: 10px;
+            @media (max-width: $breakpoint1300) {
+                font-size: 13px;
+                margin-bottom: 10px;
+                letter-spacing: 2.535px;
+            }
+            @media (max-width: $breakpoint926) {
+                font-size: 12px;
+                letter-spacing: 1.95px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+            }
+        }
+        a {
+            width: 100%;
+            max-width: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 125px;
+            border-radius: 7px;
+            border: 1px solid $font-color;
+            padding: 19px;
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 24px;
+            font-weight: $font-weight3;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            @extend %transition;
+            @media (max-width: $breakpoint1300) {
+               margin-top: 40px;
+            }
+            &:hover {
+                @extend %transition;
+                background-color: $accent-color3;
+                color: #fff;
+            }
+            &:active {
+                background-color: $accent-color;
+                border: 1px solid $accent-color;
+            }
+            @media (max-width: $breakpoint926) {
+                max-width: 131px;
+                border-radius: 3px;
+                padding: 6px;
+                font-size: 10.312px;
+                letter-spacing: 1.662px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    img {
+        display: block;
+        @media (max-width: $breakpoint926) {
+            border-radius: 3px;
+            max-width: 198px;
+            max-height: 198px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__img {
+        @media (max-width: $breakpoint1400) {
+            max-height: 400px;
+        }
+        @media (max-width: $breakpoint1400) {
+            flex-shrink: 0;
+            max-height: 360px;
+            max-width: 360px;
+            height: unset;
+        }
+        @media (max-width: $breakpoint926) {
+            flex-shrink: unset;
+            max-height: 198px;
+            max-width: unset;
+            margin-bottom: 20px;
+        }
+    }
+}
+p.no-margin {
+    margin-bottom: 0;
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+}
+.slider-btns.no-margin {
+    position: absolute;
+    right: 785px;
+    max-width: 762px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: -40px;
+    z-index: 1;
+    @media (max-width: 1690px) {
+        right: 515px;
+    }
+    @media (max-width: $breakpoint1400) {
+        display: none;
+    }
+}
+.services-slider-scrollbar {
+    margin-top: 40px;
+    @media (max-width: $breakpoint1400) {
+        margin-top: 0;
+    }
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+}
+.services-slider-scrollbar {
+    margin-left: unset;
+    margin-right: unset;
+}

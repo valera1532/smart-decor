@@ -1,0 +1,79 @@
+.tel {
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -268px;
+    display: flex;
+    @extend %transition;
+    @media (max-width: $breakpoint926) {
+        right: -177px; 
+    }
+}
+.tel-icon {
+    @media (max-width: $breakpoint926) {
+       width: 30px;
+       height: 30px;
+    }
+}
+.tel-btn {
+    position: relative;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 126.4%;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+    padding: 26px 33px;
+    opacity: 0;
+    visibility: hidden;
+    @extend %transition;
+    @media (max-width: $breakpoint926) {
+        font-size: 10px;
+        letter-spacing: 0.54px;
+        padding: 12px 15px;
+        height: 32px;
+        width: 190px;
+    }
+    &::before {
+        position: absolute;
+        content: url('/images/home/tel-bg.svg');
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @media (max-width: $breakpoint926) {
+            content: url('/images/home/tel-bg-mobile.svg');
+        }
+    }
+    span {
+        display: block;
+        position: relative;
+        transform: translateY(-19%);
+    }
+}
+.tel.active {
+    right: 0;
+}
+.tel-btn.active {
+    opacity: unset;
+    visibility: unset;
+    @extend %transition;
+}
+.whatsapp-link {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 33px;
+    top: calc(50% + 39px);
+    z-index: 2;
+    background: url('../../images/home/whatsapp-icon.svg') no-repeat;
+    @media (max-width: $breakpoint926) {
+        width: 27px;
+        height: 27px;
+        right: 14px;
+        top: calc(50% + 19px);
+        background: url('../../images/home/whatsapp-icon-mobile.svg') no-repeat;
+    }
+}

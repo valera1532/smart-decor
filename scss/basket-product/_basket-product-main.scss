@@ -1,0 +1,328 @@
+.header {
+    margin-bottom: 70px;
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 30px;
+    }
+}
+.basket-product {
+    @media (max-width: $breakpoint926) {
+        width: calc(100% - 64px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.basket-products {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 25px;
+    @media (max-width: 1690px) {
+        display: block;
+    }
+}
+.products-list-wrapper {
+    overflow-y: auto;
+    max-height: 471px;
+    scrollbar-width: none;
+    @media (max-width: $breakpoint926) {
+        max-height: 408px;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.products-list {
+    width: 100%;
+    max-width: 1053px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 30px 20px 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    @media (max-width: 1690px) {
+        max-width: unset;
+    }
+    @media (max-width: $breakpoint1024) {
+        padding: 19px 18px 19px 20px;
+    }
+    @media (max-width: $breakpoint926) {
+        border: none;
+        padding: 0;
+        row-gap: 6px;
+    }
+    li {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D9D9D9;
+        .about-product {
+            display: flex;
+            column-gap: 72px;
+            align-items: center;
+            @media (max-width: $breakpoint926) {
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                column-gap: 12px;
+            }
+        }
+        @media (max-width: $breakpoint926) {
+            padding: 8px 11px 12px 12px;
+            border: 0.577px solid #D9D9D9;
+            border-radius: 3px;
+        }
+        img {
+            display: block;
+            max-width: 108px;
+            max-height: 163px;
+            @media (max-width: $breakpoint926) {
+                max-width: 88px;
+                max-height: 127px;
+            }
+        }
+        .product-left {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 65px;
+            flex: 1;
+            @media (max-width: 1690px) {
+                column-gap: unset;
+                justify-content: space-between;
+            }
+            @media (max-width: $breakpoint1024) {
+                column-gap: 22px;
+                flex-wrap: wrap;
+            }
+            @media (max-width: $breakpoint926) {
+                flex-direction: column;
+            }
+            .delete {
+                font-size: 0;
+                flex-shrink: 0;
+                @media (max-width: $breakpoint1024) {
+                    margin-top: 7px;
+                    margin-left: auto;
+                }
+                @media (max-width: $breakpoint926) {
+                    display: none
+                }
+            }
+            .price {
+                color: #31302E;
+                text-align: center;
+                font-family: Rubik;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 4.8px;
+                @media (max-width: $breakpoint926) {
+                    display: none;
+                    font-size: 18px;
+                    letter-spacing: 3.6px;
+                }
+            }
+        }
+    }
+    .desc {
+        @media (max-width: $breakpoint926) {
+            margin-bottom: 20px;
+        }
+        strong {
+            max-width: 322px;
+            display: block;
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.9px;
+            margin-bottom: 16px;
+            @media (max-width: $breakpoint926) {
+                font-size: 12px;
+                letter-spacing: 0.5px;
+                margin-bottom: 5px;
+            }
+        }
+        p {
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.7px;
+            opacity: .3;
+            @media (max-width: $breakpoint926) {
+                font-size: 13px;
+            }
+            &:last-child {
+                margin-top: 5px;
+                @media (max-width: $breakpoint926) {
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
+    .quantity {
+        width: 100%;
+        max-width: 136px;
+        text-align: center;
+        @media (max-width: $breakpoint926) {
+            width: unset;
+            max-width: unset;
+            margin-bottom: 20px;
+        }
+        .counter {
+            max-height: 42px;
+            column-gap: 22px;
+            justify-content: unset;
+            @media (max-width: $breakpoint926) {
+                max-width: 110px;
+                border-radius: 3px;
+                border: 0.525px solid $font-color;
+                column-gap: 20px;
+            }
+            button {
+                width: 15px;
+                margin-top: 0;
+                margin-left: 0;
+                flex-shrink: 0;
+                @media (max-width: $breakpoint926) {
+                    width: 12px;
+                }
+            }
+            span {
+                width: 20px;
+                margin-top: 0;
+                color: $font-color;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 3.2px;
+                text-transform: uppercase;
+                @media (max-width: $breakpoint926) {
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+        span {
+            display: block;
+            margin-top: 14px;
+            font-family: Rubik;
+            font-weight: 300;
+            font-size: 15.176px;
+            letter-spacing: 3.035px;
+            @media (max-width: $breakpoint926) {
+                margin-top: 4px;
+                font-size: 13.06px;
+                letter-spacing: 2.612px;
+                text-align: left;
+            }
+        }
+    }
+}
+.checkout {
+    width: 100%;
+    max-width: 462px;
+    padding: 48px 79px 40px 79px;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    @media (max-width: 1690px) {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: $breakpoint926) {
+        border: none;
+        max-width: 195px;
+        padding: 0;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        color: #EFEFEF;
+        font-family: Rubik;
+        font-size: 18.821px;
+        font-weight: 400;
+        letter-spacing: 3.764px;
+        text-transform: uppercase;
+        border-radius: 7px;
+        background-color: $font-color;
+        @extend %transition;
+        @media (max-width: $breakpoint926) {
+            padding: 9px;
+            font-size: 12.221px;
+            letter-spacing: 2.444px;
+            border-radius: 3px;
+        }
+        &:hover {
+            background-color: #111;
+        }
+        &:active {
+            background-color: $accent-color;
+        }
+    }
+}
+.final-price {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+    margin-bottom: 33px;
+    @media (max-width: $breakpoint926) {
+        column-gap: 16px;
+        margin-bottom: 15px;
+    }
+    p {
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 23.526px;
+        font-weight: 400;
+        letter-spacing: 1.176px;
+        @media (max-width: $breakpoint926) {
+            font-size: 15.277px;
+            letter-spacing: 0.764px;
+        }
+    }
+    strong {
+        color: $font-color;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 29.368px;
+        font-weight: 400;
+        letter-spacing: 6.274px;
+        @media (max-width: $breakpoint926) {
+            font-size: 20.369px;
+            letter-spacing: 4.074px;
+        }
+    }
+}
+.product-bottom {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $breakpoint926) {
+        display: flex;
+    }
+    .price {
+        color: $font-color;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 3.6px;
+    }
+    .delete {
+        font-size: 0;
+        width: 17px;
+    }
+}

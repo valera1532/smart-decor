@@ -1,0 +1,695 @@
+.header {
+    margin-bottom: 70px;
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 30px;
+    }
+}
+.checkout {
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.checkout-content {
+    display: flex;
+    column-gap: 25px;
+    @media (max-width: $breakpoint1300) {
+        column-gap: 14px;
+    }
+    @media (max-width: $breakpoint926) {
+        display: block;
+    }
+    img {
+        max-width: 108px;
+        max-height: 163px;
+        @media (max-width: $breakpoint1300) {
+            max-width: 72px;
+            max-height: 109px;
+        }
+        @media (max-width: $breakpoint1300) {
+            max-width: 105px;
+            max-height: 150px;
+        }
+    }
+    &__left {
+        width: 100%;
+        max-width: 1052px;
+        padding: 20px;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        @media (max-width: $breakpoint926) {
+            padding: 8px 10px 10px 10px;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        column-gap: 26px;
+        border: 1px solid #D9D9D9;
+        border-radius: 5px;
+        padding: 84px 85px 83px 82px;
+        flex-shrink: 0;
+        @media (max-width: 1690px) {
+            column-gap: 20px;
+            padding: 61px 31px;
+        }
+        @media (max-width: $breakpoint926) {
+            display: none;
+        }
+        p {
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 23.526px;
+            font-weight: 400;
+            letter-spacing: 1.176px;
+            @media (max-width: 1690px) {
+                color: $font-color;
+                font-family: Rubik;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.8px;
+            }
+        }
+        strong {
+            color: $font-color;
+            text-align: center;
+            font-family: Rubik;
+            font-size: 31.368px;
+            font-weight: 400;
+            letter-spacing: 6.274px;
+            @media (max-width: 1690px) {
+                color: #31302E;
+                text-align: center;
+                font-family: Rubik;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 4.8px;
+            }
+        }
+    }
+}
+.checkout-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 160px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $accent-color2;
+    @media (max-width: $breakpoint1300) {
+        max-height: 156px;
+    }
+    @media (max-width: $breakpoint926) {
+        max-height: 175px;
+        padding-right: 24px;
+    }
+    @media (max-width: 404px) {
+        max-height: 189px;
+    }
+    @media (max-width: 352px) {
+        max-height: 203px;
+    }
+    &::-webkit-scrollbar {
+        width: 1px;
+    }
+    &::-webkit-scrollbar-track {
+        width: 1px;
+        background-color: #D9D9D9;
+    }
+    &:-webkit-scrollbar {
+        width: 1px;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 1px;
+        background-color: $font-color;
+    }
+    &:-webkit-scrollbar-track {
+        width: 1px;
+        background-color: #D9D9D9;
+    }
+    &:-webkit-scrollbar-thumb {
+        background-color: $font-color;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        column-gap: 72px;
+        @media (max-width: $breakpoint1300) {
+            column-gap: 33px;
+        }
+    }
+}
+.checkout-desc {
+    display: flex;
+    column-gap: 72px;
+    @media (max-width: 1690px) {
+        column-gap: 40px;
+    }
+    @media (max-width: $breakpoint1300) {
+        column-gap: 33px;
+    }
+    @media (max-width: $breakpoint926) {
+        display: block;
+    }
+    strong {
+        width: 100%;
+        max-width: 139px;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 4.8px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 16.128px;
+            letter-spacing: 3.226px;
+        }
+    }
+}
+.desc {
+    strong {
+        width: 100%;
+        max-width: 313px;
+        display: block;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.9px;
+        margin-bottom: 16px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 12.096px;
+            letter-spacing: 0.605px;
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        color: $font-color;
+        opacity: .3;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 9.408px;
+            letter-spacing: 0.47px;
+        }
+        &:last-child {
+            margin-top: 5px;
+            @media (max-width: $breakpoint1300) {
+                margin-top: 3px;
+            }
+        }
+    }
+}
+.quantity {
+    width: 100%;
+    max-width: 136px;
+    text-align: center;
+    @media (max-width: $breakpoint1300) {
+        max-width: 96px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 20px;
+    }
+    .counter {
+        margin-bottom: 14px;
+        justify-content: unset;
+        column-gap: 21px;
+        @media (max-width: $breakpoint1300) {
+            padding: 9px 11px;
+            border-radius: 4px;
+            column-gap: 15px;
+        }
+        @media (max-width: $breakpoint926) {
+            margin-bottom: 4px;
+        }
+        button {
+            flex-shrink: 0;
+            width: 15px;
+            @media (max-width: $breakpoint1300) {
+                width: 11px;
+            }
+        }
+        span {
+            width: 20px;
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3.2px;
+            text-transform: uppercase;
+            @media (max-width: $breakpoint1300) {
+                font-size: 10.752px;
+                letter-spacing: 2.15px;
+            }
+        }
+    }
+    p {
+        color: $font-color;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 15.176px;
+        font-weight: 300;
+        letter-spacing: 3.035px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 10.198px;
+            letter-spacing: 2.04px;
+        }
+    }
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    @media (max-width: $breakpoint926) {
+        row-gap: 15px;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0 8px 30px;
+        border-radius: 4px;
+        border: 0.525px solid $font-color;
+        @media (max-width: $breakpoint926) {
+            padding: 4px 0 4px 15px;
+        }
+    }
+    label {
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 2.8px;
+        opacity: .3;
+        @media (max-width: $breakpoint1300) {
+            font-size: 12.95px;
+            letter-spacing: 2.59px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 10px;
+            letter-spacing: 1.4px;
+        }
+    }
+    input {
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 4px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 18.5px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+    }
+}
+.checkout-tabs {
+    max-width: 1246px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+    &__right {
+        width: 100%;
+        max-width: 480px;
+        button {
+            width: 100%;
+            padding: 16px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $accent-color2;
+            font-family: Rubik;
+            font-size: 24px !important;
+            font-weight: 400;
+            letter-spacing: 4.8px !important;
+            text-transform: uppercase;
+            background-color: $font-color;
+            border-radius: 7px;
+            margin-top: 50px !important;
+            @extend %transition;
+            @media (max-width: $breakpoint1300) {
+                font-size: 22.2px !important;
+                letter-spacing: 4.44px !important;
+                padding: 14px !important;
+                margin-top: 46px !important;
+            }
+            &:hover {
+                background-color: #111;
+                @extend %transition;
+            }
+            &:active {
+                background-color: $accent-color;
+                @extend %transition;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        button {
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 4.4px;
+        }
+        button.active {
+            font-weight: 400;
+        }
+    }
+}
+.button-wrapper {
+    button {
+        display: block;
+        border-radius: 10px;
+        outline: 1px solid #D9D9D9;
+        background-color: #fff;
+        padding: 39px 30px !important;
+        text-align: left;
+        &:last-child {
+            @media (max-width: $breakpoint926) {
+                margin-top: 15px;
+            }
+        }
+        @media (max-width: $breakpoint1300) {
+            padding: 31px 20px !important;
+        }
+        @media (max-width: $breakpoint926) {
+            display: block !important;
+            text-align: center;
+            border-radius: 3px;
+            padding: 20px 10px !important;
+        }
+        &:hover {
+            background-color: $accent-color2;
+        }
+        strong {
+            display: block;
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            @media (max-width: $breakpoint1300) {
+                font-size: 18px;
+                letter-spacing: 0.9px;
+            }
+            @media (max-width: $breakpoint926) {
+                color: #31302E;
+                font-family: Rubik;
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+        }
+        span {
+            display: block;
+            color: $font-color;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 126.4%;
+            letter-spacing: 2.73px;
+            @media (max-width: $breakpoint1300) {
+                font-size: 13px;
+                letter-spacing: 2.535px;
+            }
+            @media (max-width: $breakpoint926) {
+                font-size: 12px;
+                letter-spacing: 1.56px;
+            }
+        }
+    }
+    input[type=file] {
+        display: none;
+    }
+    .payment-button.active {
+        background-color: $accent-color2;
+        outline: unset;
+    }
+    strong.first {
+        margin-bottom: 0 !important;
+    }
+}
+.count {
+    border-radius: 10px;
+    outline: 1px solid #D9D9D9;
+    background-color: #fff;
+    padding: 39px 30px;
+    cursor: pointer;
+    @extend %transition;
+    @media (max-width: $breakpoint1300) {
+        padding: 30px 20px;
+    }
+    @media (max-width: $breakpoint926) {
+        padding: 20px 10px;
+        border-radius: 3px;
+    }
+    &:hover {
+        background-color: #efefef;
+    }
+    strong {
+        display: block;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        @media (max-width: $breakpoint1300) {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+        }
+        @media (max-width: $breakpoint926) {
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    span {
+        display: block;
+        color: $font-color;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 126.4%;
+        letter-spacing: 2.73px;
+        margin-top: 10px;
+        @media (max-width: $breakpoint926) {
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 1.56px;
+            margin-top: 5px;
+        }
+    } 
+}
+.file {
+    margin-top: 21px;
+    background-color: transparent !important;
+    @media (max-width: $breakpoint926) {
+        margin-top: 8px;
+    }
+    button {
+        max-width: 200px;
+        display: inline-flex !important;
+        column-gap: 3.53px !important;
+        padding: 0 !important;
+        outline: none;
+        margin-top: 0 !important;
+        border: none !important;
+        background-color: transparent !important;
+        @media (max-width: $breakpoint926) {
+            max-width: unset;
+            justify-content: center !important;
+        }
+        svg {
+            @media (max-width: $breakpoint926) {
+                width: 9px;
+            }
+        }
+        span {
+            position: relative;
+            color: $font-color;
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 2.8px;
+            margin-top: 0 !important;
+            @media (max-width: $breakpoint926) {
+                font-size: 10.003px !important;
+                letter-spacing: 1.601px !important;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: $font-color;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+}
+.disabled {
+    display: none;
+}
+.delivery-method {
+    transform: translateY(-48px);
+    @media (max-width: $breakpoint926) {
+        transform: unset;
+    }
+}
+.last {
+    @media (max-width: $breakpoint1300) {
+        font-size: 16px !important;
+        letter-spacing: 0.8px !important;
+    }
+    @media (max-width: $breakpoint926) {
+        color: $font-color;
+        font-size: 10px !important;
+        letter-spacing: 0.4px;
+    }
+}
+.first {
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 0 !important;
+    }
+}
+.result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    padding-top: 10px;
+    border-top: 1px solid #D9D9D9;
+    margin-top: 20px;
+    @media (max-width: $breakpoint926) {
+        display: flex;
+    }
+    p {
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 15.277px;
+        font-weight: 400;
+        letter-spacing: 0.764px;
+    }
+    strong {
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 20.369px;
+        font-weight: 400;
+        letter-spacing: 4.074px;
+    }
+}
+.desc {
+    margin-bottom: 20px;
+}
+.acordeon {
+    display: none;
+    flex-direction: column;
+    row-gap: 19px;
+    margin-top: 33px;
+    @media (max-width: $breakpoint926) {
+        display: flex;
+        width: calc(100% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 2.4px;
+    }
+    button[type=submit] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $font-color;
+        color: $accent-color2;
+        padding: 8px;
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        margin-top: 25px;
+    }
+    svg {
+        @extend %transition;
+    }
+    .close {
+        position: absolute;
+        right: 0;
+        opacity: 0;
+    }
+}
+.acordeon-item {
+    height: 0;
+    overflow-y: hidden;
+    @extend %transition;
+    padding-left: 20px;
+    padding-right: 24px;
+}
+
+.products-line {
+    margin-top: 120px !important;
+    @media (max-width: $breakpoint1300) {
+        margin-top: 80px !important;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-top: 40px !important;
+    }
+}
+.delivery-btn {
+    outline: none !important;
+    border: 1px solid #d9d9d9;
+}
+.delivery-btn.active {
+    background-color: #efefef;
+    border: unset;
+}
+.payment-button-mobile {
+    outline: none !important;
+    border: 1px solid #d9d9d9;
+}
+.payment-button-mobile.active {
+    border: none !important;
+    background-color: #efefef;
+}

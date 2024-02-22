@@ -1,0 +1,62 @@
+.header {
+    margin-bottom: 70px;
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 30px;
+    }
+}
+.job-types {
+    padding: 59px 0;
+    background-color: $accent-color2;
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+        padding: 30px 10px;
+    }
+    &__content {
+        max-width: 1239px;
+        margin: 0 auto;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 30px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        color: $font-color;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        &:last-child {
+            margin-top: 60px;
+            @media (max-width: $breakpoint1300) {
+                margin-top: 50px;
+            }
+            @media (max-width: $breakpoint1300) {
+                margin-top: 20px;
+            }
+        }
+        @media (max-width: $breakpoint1300) {
+            font-size: 35px;
+            letter-spacing: unset;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 14px;
+
+        }
+    }
+}

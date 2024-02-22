@@ -1,0 +1,125 @@
+.options {
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.options-slider {
+    display: flex;
+    column-gap: 70px;
+    @media (max-width: 1690px) {
+        column-gap: 42px;
+    }
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        @media (max-width: $breakpoint1300) {
+            border-radius: 7px;
+        }
+    }
+    &__big {
+        width: 100%;
+        max-width: 600px;
+        max-height: 600px;
+        flex: 1;
+        @media (max-width: $breakpoint1024) {
+            max-width: 360px;
+            max-height: 360px;
+        }
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        flex: 1;
+    }
+}
+.slider-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    strong {
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+    }
+    p {
+        margin-top: 33px;
+        @media (max-width: $breakpoint1300) {
+            margin-top: 15px;
+        }
+    }
+}
+.options-slider-mobile {
+    display: none;
+    max-width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @media (max-width: $breakpoint926) {
+        display: block;
+    }
+    .swiper-slide {
+        display: flex;
+        column-gap: 6px;
+        &__items {
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+            img {
+                max-height: 96px;
+            }
+        }
+    }
+    img {
+        display: block;
+        border-radius: 3px;
+        max-height: 198px;
+        height: 100%;
+    }
+}
+.mobile-items {
+    margin-top: 10px;
+    strong {
+        display: block;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 11.5px;
+        font-weight: 400;
+        letter-spacing: 0.475px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    p {
+        color: $font-color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 126.4%;
+        letter-spacing: 1.95px;
+    }
+}

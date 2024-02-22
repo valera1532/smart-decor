@@ -1,0 +1,35 @@
+.desc {
+    padding: 150px 0;
+    background-color: $accent-color2;
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+        padding: 100px 0;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+        padding: 50px 0;
+    }
+    strong {
+        display: block;
+        max-width: 1330px;
+        color: $font-color;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 37px;
+        font-weight: 300;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: $breakpoint1300) {
+            font-size: 35px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 14px;
+        }
+        br {
+            @media (max-width: $breakpoint926) {
+                display: none;
+            }
+        }
+    }
+}

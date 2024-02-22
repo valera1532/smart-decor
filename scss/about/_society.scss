@@ -1,0 +1,82 @@
+.society-content {
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    @media (max-width: $breakpoint926) {
+        padding: 30px 12px;
+        border-radius: 3px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        @media (max-width: $breakpoint1300) {
+            row-gap: 39px;
+        }
+        @media (max-width: $breakpoint926) {
+            row-gap: 30px;
+        }
+        li {
+           padding-bottom: 50px;
+           border-bottom: 1px solid #D9D9D9;
+           &:nth-child(2) strong {
+            max-width: 827px;
+            @media (max-width: $breakpoint1300) {
+                max-width: 689px;
+            }
+            @media (max-width: $breakpoint926) {
+                max-width: 275px;
+            }
+           }
+           &:last-child {
+            padding-bottom: 0;
+            border: none;
+           }
+            @media (max-width: $breakpoint1300) {
+                padding-bottom: 39px;
+            }
+        }
+    }
+    strong {
+        max-width: 934px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        @media (max-width: $breakpoint1300) {
+            max-width: 778px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        @media (max-width: $breakpoint926) {
+            max-width: 275px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 126.4%;
+        letter-spacing: 3.6px;
+        color: $font-color;
+        @media (max-width: $breakpoint926) {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+    }
+    br {
+        display: none;
+        @media (max-width: $breakpoint926) {
+            display: unset;
+        }
+    }
+}

@@ -1,0 +1,218 @@
+main {
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+    }
+}
+.header {
+    margin-bottom: 70px;
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 30px;
+    }
+}
+.warranty {
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 9px;
+        }
+    }
+}
+.warranty-content {
+    display: flex;
+    @media (max-width: $breakpoint926) {
+        display: none;
+    }
+    &__item {
+        max-width: 900px;
+        padding: 37px 39px;
+        background-color: $accent-color2;
+        flex: 1;
+        border-radius: 0 10px 10px 10px;
+        @media (max-width: $breakpoint1300) {
+            padding: 22px 24px;
+        }
+        ul {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            @media (max-width: $breakpoint1300) {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                column-gap: 7px;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 126.4%;
+                letter-spacing: 3.42px;
+                color: $font-color;
+                @media (max-width: $breakpoint1300) {
+                    font-size: 12px;
+                    letter-spacing: 2.28px;
+                }
+            }
+        }
+        p {
+            color: $font-color;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 126.4%;
+            letter-spacing: 3.42px;
+            @media (max-width: $breakpoint1300) {
+                font-size: 12px;
+                letter-spacing: 2.28px;
+            }
+        }
+        strong {
+            display: block;
+            color: $font-color;
+            font-family: 'Circe regular';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 126.4%;
+            letter-spacing: 3.42px;
+            margin-top: 30px;
+            @media (max-width: $breakpoint1300) {
+                font-size: 12px;
+                letter-spacing: 2.28px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.tab-btns {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $breakpoint1300) {
+        flex: 1;
+    }
+    button {
+        display: block;
+        width: 100%;
+        padding: 22px 40px;
+        font-family: Rubik;
+        font-size: 34px;
+        font-weight: 300;
+        letter-spacing: 6.8px;
+        text-transform: uppercase;
+        color: $font-color;
+        border-radius: 10px 0 0 10px;
+        text-align: left;
+        @media (max-width: $breakpoint1300) {
+            font-size: 20px;
+            letter-spacing: 4px;
+            padding: 22px 24px;
+        }
+    }
+    button.active {
+        background-color: $accent-color2;
+    }
+}
+.warranty-content__item.disabled {
+    display: none;
+}
+.accordeon {
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+    @media (max-width: $breakpoint926) {
+        display: flex;
+    }
+    button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-color: $accent-color2;
+        border-radius: 3px;
+        @extend %transition;
+        font-family: Rubik;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 10px;
+        svg {
+            line {
+                @extend %transition;
+            }
+        }
+    }
+    button.active {
+        background-color: transparent;
+        padding-top: 5px;
+        margin-top: 5px;
+    }
+    .accordeon-item {
+        position: relative;
+        padding-top: 0;
+        height: 0;
+        overflow-y: hidden;
+        margin-top: 0;
+        border: none;
+        @extend %transition;
+        padding: 0 10px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: calc(100% - 20px);
+            height: 1px;
+            right: 10px;
+            top: 0;
+            background-color: $font-color;
+            opacity: .3;
+        }
+        p {
+            color: $font-color;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 126.4%;
+            letter-spacing: 1.52px;
+            margin-bottom: 10px;
+        }
+        strong {
+            display: block;
+            color: #31302E;
+            font-family: 'Circe regular';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 126.4%;
+            letter-spacing: 1.52px;
+            margin-bottom: 5px;
+        }
+        ul {
+            margin-bottom: 5px;
+        }
+        li {
+            color: #31302E;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 126.4%;
+            letter-spacing: 1.52px;
+        }
+    }
+}
+.choice {
+    margin-bottom: 0 !important;
+}

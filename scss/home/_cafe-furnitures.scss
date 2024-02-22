@@ -1,0 +1,197 @@
+.cafe-furniture {
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1250) {
+            font-size: 38px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 10px;
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        @media (max-width: $breakpoint1086) {
+            column-gap: 97px;
+        }
+        @media (max-width: $breakpoint926) {
+           display: block;
+        }
+    }
+    &__left {
+        max-width: 700px;
+        @media (max-width: $breakpoint1400) {
+            max-width: 627px;
+        }
+        @media (max-width: $breakpoint1250) {
+            max-width: 527px;
+        }
+        @media (max-width: $breakpoint1086) {
+            max-width: 427px;
+        }
+        @media (max-width: $breakpoint926) {
+            max-width: unset;
+            width: calc(100% - 110px);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__right {
+        @media (max-width: $breakpoint1400) {
+            max-width: 580px;
+        }
+        @media (max-width: $breakpoint1250) {
+            max-width: 470px;
+        }
+        @media (max-width: $breakpoint1086) {
+            max-width: 400px;
+        }
+        @media (max-width: $breakpoint926) {
+            max-width: unset;
+            width: calc(100% - 110px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__card {
+        img {
+            display: block;
+            margin-bottom: 30px;
+            @media (max-width: $breakpoint1250) {
+                margin-bottom: 20px;
+            }
+            @media (max-width: $breakpoint926) {
+                width: 100%;
+                margin-bottom: 9px;
+            }
+        }
+        h3 {
+            @extend %card-title;
+            text-align: center;
+            @media (max-width: $breakpoint1250) {
+                font-size: 20px;
+                letter-spacing: 4px;
+            }
+            @media (max-width: $breakpoint926) {
+                margin-bottom: 4px;
+                font-size: 12px;
+                letter-spacing: 2.4px;
+            }
+        }
+        p {
+            @extend %card-text;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            @media (max-width: $breakpoint1300) {
+                font-size: 15px;
+                letter-spacing: 3px;
+            }
+            @media (max-width: $breakpoint926) {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .sofa {
+        margin-top: 48px;
+        margin-bottom: 75px;
+        @media (max-width: $breakpoint1250) {
+            margin-top: 39px;
+            margin-bottom: 39px;
+        }
+        @media (max-width: $breakpoint926) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 533px;
+        }
+    }
+    .worktops {
+        margin-top: 70px;
+        margin-bottom: 49px;
+        @media (max-width: 1690px) {
+            margin-top: 134px;
+        }
+        @media (max-width: $breakpoint1250) {
+            margin-top: 39px;
+            margin-bottom: 39px;
+        }
+        @media (max-width: $breakpoint1024) {
+            margin-top: 24px;
+        }
+        @media (max-width: $breakpoint926) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 614px;
+        }
+    }
+    .chairs {
+        p {
+            max-width: 533px;
+        }
+    }
+    .underland {
+        p {
+            max-width: 665px;
+        }
+    }
+    .light {
+        p {
+            max-width: 544px;
+        }
+    }
+    a {
+        max-width: 380px;
+        @extend %flex;
+        justify-content: center;
+        align-items: center;
+        padding: 19px;
+        border-radius: 7px;
+        border: 1px solid $font-color;
+        color: #31302E;
+        @extend %link;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        @extend %transition;
+        @media (max-width: $breakpoint1250) {
+            font-size: 24px;
+            letter-spacing: 4.8px;
+        }
+        @media (max-width: $breakpoint926) {
+            max-width: 127px;
+            font-size: 8.021px;
+            letter-spacing: 1.604px;
+            margin-top: 20px;
+            padding: 6px;
+            border-radius: 3px;
+        }
+        &:hover {
+            background-color: $accent-color3;
+            color: #fff;
+            @extend %transition; 
+        }
+        &:active {
+            background-color: $accent-color;
+            border: 1px solid $accent-color;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+//vars
+$font-color: #31302E;
+$accent-color: #F3CB07;
+$accent-color2: #EFEFEF;
+$accent-color3: #111;
+
+
+$font-size: 14px;
+$font-size2: 12px;
+
+$font-weight: 300;
+$font-weight2: 500;
+$font-weight3: 400;
+
+// @extend
+%flex {
+    display: flex;
+}
+%transition {
+    transition: .3s ease-out;
+}
+%title {
+    color: $font-color;
+    font-family: Rubik;
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: 8.8px;
+    text-transform: uppercase;
+}
+%subtitle {
+    color: $font-color;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+}
+%card-title {
+    color: $font-color;
+    font-family: Rubik;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+%card-text {
+    color: $font-color;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 4.8px;
+}
+%link {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: $font-weight3;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+}
+%slider-text {
+    color: #31302E;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 126.4%;
+    letter-spacing: 3.6px;
+}
+%footer-item {
+    color: #31302E;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+}
+
+//breakpoints
+$breakpoint1418: 1418px;
+$breakpoint1440: 1440px;
+$breakpoint1400: 1400px;
+$breakpoint1310: 1310px;
+$breakpoint1300: 1300px;
+$breakpoint1250: 1250px;
+$breakpoint1200: 1200px;
+$breakpoint1086: 1086px;
+$breakpoint1024: 1024px;
+$breakpoint926: 926px;
+
+.container {
+    @media (max-width: $breakpoint1024) {
+        max-width: 927px;
+        padding: 0 9px;
+    }
+}

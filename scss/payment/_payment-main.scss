@@ -1,0 +1,74 @@
+main {
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+    }
+}
+.header {
+    margin-bottom: 70px;
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 30px;
+    }
+}
+.payment {
+    margin-bottom: 120px;
+    @media (max-width: $breakpoint1300) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: $breakpoint926) {
+        margin-bottom: 40px;
+    }
+    .title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint1300) {
+            font-size: 40px;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: $breakpoint926) {
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            margin-bottom: 9px;
+        }
+    }
+}
+.payment-content {
+    display: flex;
+    &__item {
+        flex: 1;
+        max-width: 900px;
+        padding: 37px 39px;
+        background-color: $accent-color2;
+    }
+}
+.tab-btns {
+    flex: 1;
+    button {
+        display: block;
+        width: 100%;
+        padding: 22px 40px;
+        color: $font-color;
+        font-family: Rubik;
+        font-size: 34px;
+        font-weight: 300;
+        letter-spacing: 6.8px;
+        text-transform: uppercase;
+        border-radius: 10px 0 0 10px;
+    }
+    button.active {
+        background-color: $accent-color2;
+    }
+}
+.mobile-acordeon {
+    button.active {
+        background-color: transparent;
+    }
+    &__content {
+        background-color: transparent !important;
+    }
+}
